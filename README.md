@@ -40,7 +40,7 @@ $ make
 $ cp bdfont ~/work/saroo_jp/
 $ cd ~/work/saroo_jp/
 
-$ tar -jvf shinonome-0.9.11p1.tar.bz2
+$ tar -xjf shinonome-0.9.11p1.tar.bz2
 ```
 
 フォントは PYTHON のスクリプトで結合・コード変更したものをバイナリに変換します
