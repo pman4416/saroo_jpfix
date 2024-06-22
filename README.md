@@ -46,7 +46,7 @@ $ tar -xjf shinonome-0.9.11p1.tar.bz2
 フォントは PYTHON のスクリプトで結合・コード変更したものをバイナリに変換します
 ```
 $ ./fontjis2ucs.py -j shinonome-0.9.11/bdf/shnmk14.bdf -h shinonome-0.9.11/bdf/shnm7x14r.bdf shnmrk14_ucs.bdf
-$ ./bdfont shnmrk14_ucs.bdf font_shnmk14.bin
+$ ./bdfont shnmrk14_ucs.bdf -c font_shnmk14.bin
 ```
 
 ## バイナリファイル結合
