@@ -2,7 +2,8 @@
 
 公式で配布されているファームウェア ssfirm.bin のフォントを東雲フォントに変更し、文字化けなどに対処したフォントデータを作成する手順をまとめています。
 
-- 2024/05/15版対応
+- 2024/05/15版(firm_v0.5)対応
+- 2024/06/17版(firm_v0.6)確認
 
 ## 説明
 
@@ -56,3 +57,17 @@ $ cat ssfirm_main.bin font_shnmk14.bin > ssfirm.bin
 ```
 
 出来た `ssfirm.bin` を SAROO にセットするマイクロSDカードの `SAROO/ssfirm.bin` にコピーしてください。
+
+
+## サポートスクリプト
+
+* 対象とする ssfirm.bin を `mk_jp_ssfirm.sh` と同じディレクトリにコピー
+* 同ディレクトリに変換した日本語フォントバイナリを配置(`font_shnmk14.bin`)
+* `mk_jp_ssfirm.sh` を実行するとフォントを更新した `ssfirm.bin` が得られる
+```
+$ ls
+font_shnmk14.bin mk_jp_ssfirm.sh ssfirm.bin
+$ ./mk_jp_ssfirm.sh
+$ ls 
+font_shnmk14.bin mk_jp_ssfirm.sh ssfirm.bin ssfirm.bin.org
+```
