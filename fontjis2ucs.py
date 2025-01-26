@@ -162,7 +162,8 @@ remap_code(fonts[0]['bdf'], 8212, 8213)
 
 # conio.c で 0x30fc -> 0x2014 に変更されている
 # 「ゲーム」の文字化けが修正される
-remap_code(fonts[0]['bdf'], 0x30fc, 0x2014)
+# v0.7 で削除されている
+# remap_code(fonts[0]['bdf'], 0x30fc, 0x2014)
 
 # コード重複などの処理
 chars = 0
